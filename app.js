@@ -12,7 +12,7 @@ function sum(a, b) { //eslint-disable-line
     let add = a + b ;
     let concat = ' the sum of '+ a + ' and '+ b +' is '+ add + '.' ;
     let arr =[add,concat];
-return arr;
+    return arr;
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -30,11 +30,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+    let multi=  a * b ;
+    let concat = 'The product of ' + a + ' and ' + b + ' is ' + multi + '.';
+    let arr = [multi, concat]
+    return arr ;
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
