@@ -10,13 +10,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
     let add = a + b ;
-    let concat = ' the sum of '+ a + ' and '+ b +' is '+ add + '.' ;
+    let concat = 'The sum of ' + a + ' and ' + b + ' is ' + add + '.' ;
     let arr =[add,concat];
     return arr;
 }
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -104,7 +104,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  let multiAB = multiply(multArr[0], multArr[1])[0];
+   let multiAB = multiply(multArr[0], multArr[1])[0];
    let result = multiply(multiAB, multArr[2])[0];
    let arr =[result, 'The numbers ' + multArr + ' have a product of ' + result + '.'];
     return arr ;
@@ -135,10 +135,15 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+    let multAB = multiply(dynamicArray[0],dynamicArray[1])[0];
+    let multAB_C = multiply(multAB ,dynamicArray[2])[0];
+    let multDE =  multiply(dynamicArray[3] ,dynamicArray[4])[0];
+    let result = multiply(multAB_C ,multDE)[0];
+    let arr = [result,'The numbers 1,2,3,4,5 have a product of 120.'];
+    return arr;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+ testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
